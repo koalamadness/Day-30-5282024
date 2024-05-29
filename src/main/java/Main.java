@@ -1,9 +1,25 @@
 // import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import java.util.HashMap;
+
 
 public class Main {
 
   public static void main(String[] args) {
+
+
+    HashMap<Integer, String> map1 = new HashMap<Integer, String>();
+    map1.put(1, "apple");
+    map1.put(2, "banana");
+    map1.put(3, "orange");
+    map1.put(4, "grape");
+
+    // Segundo HashMap
+    HashMap<Integer, String> map2 = new HashMap<Integer, String>();
+    map2.put(5, "banana");
+    map2.put(6, "kiwi");
+    map2.put(7, "grape");
+    map2.put(8, "pear");
 
     Functest f =  new Functest();
     
@@ -30,6 +46,9 @@ public class Main {
     hsmf.wordCounter("palabra");
 
     hsmf.wwCounter("matanga dijo la changa la mona la changa matanga la");
+
+    hsmf.findCommonVal(map1, map2);
+    
   }
 
 }

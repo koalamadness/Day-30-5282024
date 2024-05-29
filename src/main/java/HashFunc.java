@@ -41,6 +41,23 @@ class HashFunch{
 
   }
 
+  void findCommonVal(HashMap<Integer, String> hsmap1, HashMap<Integer, String> hsmap2){
+    ArrayList<String> commonWordsList = new ArrayList<String>();
+
+    for(String w1: hsmap1.values()){
+
+      for(String w2: hsmap2.values()){
+
+        if(w2.equals(w1)){
+          commonWordsList.add(w2);
+        }
+      }
+      
+    }
+  
+    System.out.println(commonWordsList);
+  }
+
 
 
   
