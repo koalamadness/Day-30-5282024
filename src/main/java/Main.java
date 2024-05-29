@@ -1,6 +1,5 @@
 // import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import Functest;
 
 public class Main {
 
@@ -10,7 +9,17 @@ public class Main {
     
     System.out.println("Hello world!");
 
-    f.check_even_num(5);
+    f.check_even_num(4);
+
+    f.one2tenfor();
+
+    f.one2tenwhile();
+
+    f.sum2num(2.7f, 3.5f);
+
+    Persona pablo = new Persona("Pablo", 56);
+    System.out.println(pablo.edad);
+    
   }
   
 }
