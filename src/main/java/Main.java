@@ -19,7 +19,12 @@ public class Main {
 
     Persona pablo = new Persona("Pablo", 56);
     System.out.println(pablo.edad);
-    
+
+    Triangulo tri = new Triangulo();
+    tri.dibujar();
+
+    Rectangulo rect = new Rectangulo();
+    rect.dibujar();
   }
-  
+
 }
