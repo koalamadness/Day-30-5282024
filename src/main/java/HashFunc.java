@@ -1,4 +1,7 @@
 import java.util.HashMap;
+import java.util.ArrayList;
+import java.util.Arrays;
+
 
 class HashFunch{
 
@@ -14,10 +17,31 @@ class HashFunch{
         letterCounter.put(ch, 1);
       }
       
-      
     }
 
     System.out.println(letterCounter);
   }
+
+  void wwCounter(String text){
+    HashMap<String, Integer> wordCounter= new HashMap<String, Integer>();
+
+    ArrayList<String> wordList = new ArrayList<String>(Arrays.asList(text.split(" ")));
+
+    for (String word : wordList) {
+
+    if(wordCounter.get(word) != null){
+        wordCounter.put(word, wordCounter.get(word) + 1);
+    } else {
+        wordCounter.put(word, 1);
+    }
+
+    }
+
+    System.out.println(wordCounter);
+
+  }
+
+
+
   
 }

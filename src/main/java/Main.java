@@ -25,6 +25,11 @@ public class Main {
 
     Rectangulo rect = new Rectangulo();
     rect.dibujar();
+
+    HashFunch hsmf = new HashFunch();
+    hsmf.wordCounter("palabra");
+
+    hsmf.wwCounter("matanga dijo la changa la mona la changa matanga la");
   }
 
 }
