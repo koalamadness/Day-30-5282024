@@ -7,7 +7,12 @@ public class Main {
 
   public static void main(String[] args) {
 
-
+    HashMap<String, Integer> map0 = new HashMap<String, Integer>();
+    map0.put("apple", 1);
+    map0.put("taco", 2);
+    map0.put("donut", 1);
+    map0.put("cheese", 2);
+    
     HashMap<Integer, String> map1 = new HashMap<Integer, String>();
     map1.put(1, "apple");
     map1.put(2, "banana");
@@ -48,7 +53,9 @@ public class Main {
     hsmf.wwCounter("matanga dijo la changa la mona la changa matanga la");
 
     hsmf.findCommonVal(map1, map2);
-    
+
+
+    hsmf.removeSpecificVal(map0);
   }
 
 }

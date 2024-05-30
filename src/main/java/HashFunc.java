@@ -1,6 +1,8 @@
 import java.util.HashMap;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
+import java.util.Map;
 
 
 class HashFunch{
@@ -56,6 +58,26 @@ class HashFunch{
     }
   
     System.out.println(commonWordsList);
+  }
+  
+  public static void removeSpecificVal(HashMap<String, Integer> hshmap) {
+      int valueToRemove = 2;
+
+      // Usar un iterador para evitar ConcurrentModificationException
+      Iterator<Map.Entry<String, Integer>> iterator = hshmap.entrySet().iterator();
+
+      while (iterator.hasNext()) {
+          Map.Entry<String, Integer> entry = iterator.next();
+          if (entry.getValue() == valueToRemove) {
+              iterator.remove();
+          }
+      }
+
+      System.out.println(hshmap);
+  }
+
+  public void reverseHashMap(){
+    
   }
 
 
