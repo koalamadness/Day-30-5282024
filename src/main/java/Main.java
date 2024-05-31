@@ -7,6 +7,25 @@ public class Main {
 
   public static void main(String[] args) {
 
+    FiveLvlFunc fvl = new FiveLvlFunc();
+
+    HashMap<String, String> map11 = new HashMap<String, String>();
+      map11.put("one", "apple");
+      map11.put("two", "banana");
+      map11.put("three", "cherry");
+      map11.put("four", "date");
+      map11.put("five", "elderberry");
+
+    // Segundo HashMap
+    HashMap<String, String> map22 = new HashMap<String, String>();
+      map22.put("three", "cherry");
+      map22.put("four", "fig");
+      map22.put("five", "elderberry");
+      map22.put("six", "grape");
+      map22.put("seven", "honeydew");
+
+    fvl.combineMaps(map11,map22);
+
     HashMap<String, Integer> map0 = new HashMap<String, Integer>();
     map0.put("apple", 1);
     map0.put("taco", 2);

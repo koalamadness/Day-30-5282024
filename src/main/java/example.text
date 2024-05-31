@@ -1,0 +1,2 @@
+Escribe un programa que lea un archivo de texto y use un HashMap para construir un histograma de frecuencias de palabras, mostrando cuántas palabras tienen una determinada longitud.
+
