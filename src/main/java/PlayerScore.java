@@ -23,11 +23,27 @@ public class PlayerScore{
     } else{
       System.out.println("Player " + player + "could not be found");
     }
-    
   }
 
-  void averageScores(){
-    
+  void findAvgScore(String player){
+    if(playerScoreMap.containsKey(player)){
+      
+      ArrayList<Double> scoreList = playerScoreMap.get(player);
+      double sum = 0.0;
+      
+      for (Double num : scoreList) {
+          sum += num;
+      }
+
+      double avgScore = sum / scoreList.size();
+
+      System.out.println("Avg Score of Player: " + player + " is: " + avgScore);
+
+      
+    } else{
+      
+      System.out.println("Player " + player + "could not be found");
+    }
   }
 
   void findMaxScore(){
